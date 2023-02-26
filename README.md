@@ -6,7 +6,7 @@
   - [X] API should provide data than can be used in a list or table (most likely provided from an array).
 - [X] Find a new style from https://dribbble.com/tags/free or https://www.figma.com/community
   - [X] The design picked should have a list or table that you can copy for your data.
-- [ ] Implement the design using your data.
+- [X] Implement the design using your data.
 - [X] Should look like a list or table (but does not need to use \<table\> or \<ul\>, \<dl\>, \<ol\>).
 - [ ] ~~BONUS: Make the site mobile as well as desktop friendly. Adapt design style as you see fit.~~
 - [X] Give credit on your page towards the style you picked. Provide a link to where you found the style.
@@ -17,8 +17,8 @@
 ---
 
 ### Styling / Design
-**Idea:** My idea for this project was to create a simple pomodoro timer, using React with hooks such as ```useState``` and ```useEffect```. <br><br>
-**Source:** Harry Potter API: https://hp-api.onrender.com/<br><br>
+**Idea:** My idea for this project was to create a simple pomodoro timer, using React with hooks such as ```useState``` and ```useEffect```. <br>
+**Source:** Weather API: https://openweathermap.org/<br>
 **Design:** I didn't aim for a pixel perfect design this time around since it got a bit complicated and didn't really fit the purpose, but I used the style as general inspiration by using a left aligned grid, a sans serif and the same primary colors.
 
 Visit live site here: [Weather API](https://assignment4-javascript-frameworks.vercel.app/)
