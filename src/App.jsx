@@ -88,60 +88,59 @@ function App() {
               </button>
             </div>
           </div>
-          {loading ? (
-            <ThreeDots />
-          ) : (
-            showWeather && (
-              <div className="main">
-                <div className="row">
-                  <div className="subhead">(Isolation)</div>
-                  {apiData && (
-                    <div className="h1">
-                      <h1 className="city-name">
-                        {apiData?.name}
-                      </h1>
+          {loading ?
+            <ThreeDots /> : (
+              showWeather && (
+                <div className="main">
+                  <div className="row">
+                    <div className="subhead">(Isolation)</div>
+                    {apiData && (
+                      <div className="h1">
+                        <h1 className="city-name">
+                          {apiData?.name}
+                        </h1>
+                      </div>
+                    )}
+                  </div>
+                  <div className="row">
+                    <div class="column1">
+                      <p className="paragraph">a conceptual image series reflecting on the simple experiences that we might miss during the period of lockdown.</p>
                     </div>
-                  )}
-                </div>
-                <div className="row">
-                  <div class="column1">
-                    <p className="paragraph">a conceptual image series reflecting on the simple experiences that we might miss during the period of lockdown.</p>
+                    {apiData && (
+                      <>
+                        <div className="column2">
+                          <p className="title">Temperature</p>
+                          <p className="text">{Math.floor(apiData?.main?.temp)}&#176;</p>
+                        </div>
+                      </>
+                    )}
+                    <div class="column3">
+                      <p className="title">Description</p>
+                      <p className="text">{showWeather[0]?.type}</p>
+                    </div>
+                    {apiData && (
+                      <>
+                        <div className="column4">
+                          <p className="title">Min</p>
+                          <p className="text">{Math.floor(apiData?.main?.temp_min)}&#176;</p>
+                        </div>
+                      </>
+                    )}
+                    {apiData && (
+                      <>
+                        <div className="column5">
+                          <p className="title">Max</p>
+                          <p className="text">{Math.floor(apiData?.main?.temp_max)}&#176;</p>
+                        </div>
+                      </>
+                    )}
                   </div>
-                  {apiData && (
-                    <>
-                      <div className="column2">
-                        <p className="title">Temperature</p>
-                        <p className="text">{Math.floor(apiData?.main?.temp)}&#176;</p>
-                      </div>
-                    </>
-                  )}
-                  <div class="column3">
-                    <p className="title">Description</p>
-                    <p className="text">{showWeather[0]?.type}</p>
+                  <div class="weather-icon">
+                    <img src={showWeather[0]?.src} />
                   </div>
-                  {apiData && (
-                    <>
-                      <div className="column4">
-                        <p className="title">Min</p>
-                        <p className="text">{Math.floor(apiData?.main?.temp_min)}&#176;</p>
-                      </div>
-                    </>
-                  )}
-                  {apiData && (
-                    <>
-                      <div className="column5">
-                        <p className="title">Max</p>
-                        <p className="text">{Math.floor(apiData?.main?.temp_max)}&#176;</p>
-                      </div>
-                    </>
-                  )}
                 </div>
-                <div class="weather-icon">
-                  <img src={showWeather[0]?.src} />
-                </div>
-              </div>
-            )
-          )}
+              )
+            )}
         </div>
       </div>
     </div>
