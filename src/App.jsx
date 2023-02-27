@@ -104,6 +104,7 @@ function App() {
                   </div>
                   <div className="row">
                     <div class="column1">
+                      <p className="title">summary</p>
                       <p className="paragraph">a conceptual image series reflecting on the simple experiences that we might miss during the period of lockdown.</p>
                     </div>
                     {apiData && (
