@@ -106,78 +106,7 @@ svg {
   right: 35px;
 }
 
-/* ------ Text columns ------ */
-
-
-.h1, .city-name {
-  font-family: Travel;
-  font-size: 22.5rem;
-  font-weight: lighter;
-  line-height: 18rem;
-}
-
-.row {
-  padding-left: 90px;
-  padding-right: 60px;
-}
-
-.column1,
-.column2,
-.column3,
-.column4,
-.column5,
-.column6 {
-  float: left;
-  margin-top: 80px;
-  /* background-color: rgb(79, 244, 208); */
-}
-
-.column1 {
-  /* background-color: rgb(40, 29, 12); */
-  width: 30%;
-  padding-right: 80px;
-}
-
-.column2 {
-  /* background-color: rgb(48, 116, 50); */
-  width: 25%;
-}
-
-.column3 {
-  /* background-color: rgb(133, 42, 145); */
-  width: 25%;
-}
-
-.column4 {
-  /* background-color: rgb(105, 103, 174); */
-  width: 10%;
-}
-
-.column5 {
-  /* background-color: rgb(58, 101, 119); */
-  width: 10%;
-}
-
-.column6 {
-  /* background-color: rgb(58, 101, 119); */
-  width: 30%;
-  
-}
-
-.title {
-  text-transform: uppercase;
-  font-size: 9px;
-  margin-bottom: 9px;
-  /* background-color: rgb(74, 208, 201); */
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 /* ------ Searchbar ------*/
-
 
 .column6 input,
 .column1 input,
@@ -192,6 +121,7 @@ svg {
 .column1 input {
   background-color: transparent;
   font-size: 9px;
+  letter-spacing: 0.01em;
   color: var(--dark-pink);
 }
 
@@ -205,3 +135,87 @@ svg {
   background-color: transparent;
 }
 
+/* ------ Text columns ------ */
+
+.subhead {
+  font-size: 44px;
+  text-transform: uppercase;
+  margin-bottom: -30px;
+}
+
+.h1,
+.city-name {
+  font-family: Travel;
+  font-size: 22.5rem;
+  font-weight: lighter;
+  line-height: 18rem;
+}
+
+.row {
+  padding-left: 90px;
+  padding-right: 60px;
+  padding-top: 100px;
+  position: absolute;
+}
+
+.column2,
+.column3,
+.column4,
+.column5,
+.column6 {
+  float: left;
+  margin-top: 393px;
+}
+
+.column1 {
+  float: left;
+  width: 40%;
+  padding-right: 60px;
+  margin-top: 420px;
+}
+
+.column2 {
+  width: 20%;
+}
+
+.column3 {
+  width: 20%;
+}
+
+.column4 {
+  width: 10%;
+}
+
+.column5 {
+  width: 10%;
+}
+
+.column6 {
+  width: 100%;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 9px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+.paragraph {
+  font-size: 10.5px;
+  text-transform: uppercase;
+  line-height: 15px;
+  letter-spacing: 0.01em;
+}
+
+.text {
+  margin-top: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -45,7 +45,7 @@ function App() {
         if (data.cod == 404 || data.cod == 400) {
           // ARRAY OF OBJ
           setShowWeather([
-            { type: "Not Found", src: error },
+            { type: "City Not Found", src: error },
           ]);
         }
         setShowWeather(
@@ -62,24 +62,6 @@ function App() {
         setLoading(false);
       });
   };
-
-  function App() {
-    const [show, setShow] = useState(true);
-
-    function changeState() {
-      setShow(!show);
-    }
-
-    return (
-      <div className="App">
-        {show ? (
-          <button onClick={changeState}> Display </button>
-        ) : (
-          <button onClick={changeState}> Hide </button>
-        )}
-      </div>
-    );
-  }
 
   return (
     <div className="main-container">
@@ -100,19 +82,19 @@ function App() {
         <div className="content-container">
           <div className="row">
             <div className="column6">
-              <input className="title" type="text" ref={inputRef} placeholder="Enter a city name" />
+              <input type="text" ref={inputRef} placeholder="Enter a city name" />
               <button onClick={fetchWeather}>
                 <img src={arrow} alt="..." />
               </button>
             </div>
           </div>
-
           {loading ? (
             <ThreeDots />
           ) : (
             showWeather && (
               <div className="main">
                 <div className="row">
+                  <div className="subhead">(Isolation)</div>
                   {apiData && (
                     <div className="h1">
                       <h1 className="city-name">
@@ -123,7 +105,7 @@ function App() {
                 </div>
                 <div className="row">
                   <div class="column1">
-                    <p className="title">a conceptual image series reflecting on the simple experiences that we might miss during the period of lockdown.</p>
+                    <p className="paragraph">a conceptual image series reflecting on the simple experiences that we might miss during the period of lockdown.</p>
                   </div>
                   {apiData && (
                     <>
@@ -153,9 +135,9 @@ function App() {
                       </div>
                     </>
                   )}
-                  <div class="weather-icon">
-                    <img src={showWeather[0]?.src} />
-                  </div>
+                </div>
+                <div class="weather-icon">
+                  <img src={showWeather[0]?.src} />
                 </div>
               </div>
             )
