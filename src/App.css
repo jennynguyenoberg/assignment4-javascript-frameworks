@@ -125,12 +125,12 @@ body {
 
 .column1 {
   float: left;
-  width: 33%;
-  padding-right: 60px;
+  width: 29%;
 }
 
 .column2 {
   width: 15%;
+  padding-left: 0px;
 }
 
 .column3 {
@@ -159,17 +159,11 @@ body {
   text-transform: uppercase;
 }
 
-.paragraph {
-  font-size: 10.5px;
-  letter-spacing: 0.01em;
-  line-height: 15px;
-  text-transform: uppercase;
-}
-
 .text {
   letter-spacing: 0.01em;
   margin-top: 14px;
   text-transform: uppercase;
+  line-height: 15px;
 }
 
 .row:after {

@@ -23,7 +23,7 @@ export default ({ image, name, house, actor, species, gender }) => {
         <div className="h1">{name}</div>
         <div className="column1">
           <p className="title">summary</p>
-          <p className="paragraph">a conceptual image series reflecting on the simple experiences that we might miss during the period of lockdown.</p>
+          <p className="text">a conceptual image series reflecting on the simple experiences that we might miss during the period of lockdown.</p>
         </div>
         <div className="column2">
           <p className="title">house</p>
