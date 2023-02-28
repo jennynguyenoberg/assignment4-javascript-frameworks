@@ -18,7 +18,7 @@
 
 ### Styling / Design
 **Idea:** My idea for this project was to create a simple pomodoro timer, using React with hooks such as ```useState``` and ```useEffect```. <br>
-**Source:** Weather API: https://hp-api.onrender.com//<br>
+**API-source:** https://hp-api.onrender.com//<br>
 **Design:** I didn't aim for a pixel perfect design this time around since it got a bit complicated and didn't really fit the purpose, but I used the style as general inspiration by using a left aligned grid, a sans serif and the same primary colors.
 
 **Visit live site here:** [Harry Potter API](https://assignment4-javascript-frameworks.vercel.app/)
