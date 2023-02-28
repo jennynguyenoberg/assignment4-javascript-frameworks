@@ -38,8 +38,8 @@ body {
 
 .left-container {
   background-color: var(--dark-pink);
-  width: 53.2%;
   height: 955px;
+  width: 53.2%;
 }
 
 .asset_img img {
@@ -64,10 +64,10 @@ body {
 /* ------ Right side ------ */
 
 .right-container {
-  width: 65%;
   background-color: var(--light-pink);
-  color: var(--dark-pink);
   border-left: 1.5px solid var(--dark-pink);
+  color: var(--dark-pink);
+  width: 65%;
 }
 
 .top-left {
@@ -75,76 +75,56 @@ body {
   line-height: 1.03em;
   padding-left: 33px;
   padding-top: 31px;
+  position: fixed;
   text-align: left;
   text-transform: uppercase;
-  position: fixed;
 }
 
 .top-right {
   line-height: 1.03em;
-  text-align: right;
-  text-transform: uppercase;
-  padding-left: 689px;
+  padding-left: 691px;
   padding-top: 31px;
   position: fixed;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .bottom-left {
-  padding-left: 33px;
-  padding-top: 725px;
+  padding-left: 31px;
+  padding-top: 727px;
   position: fixed;
 }
 
 .icon {
-  padding-left: 735px;
-  padding-top: 721px;
+  padding-left: 730px;
+  padding-top: 719px;
   position: fixed;
 }
 
 /* ------ Text columns ------ */
 
 .row {
-  margin: 0px 50px 0px 100px;
+  margin: 0px 110px 0px 110px;
   position: absolute;
 }
 
 .subhead {
-  font-size: 44px;
-  margin-top: 150px;
+  font-size: 47px;
+  letter-spacing: -3px;
+  margin: 150px 0px -2px -5px;
   text-transform: uppercase;
 }
 
 .h1 {
   font-family: Travel;
-  font-size: 16.5rem;
+  font-size: 17.2rem;
   font-weight: lighter;
-  line-height: 12.25rem;
-  margin-bottom: 130px;
-  margin-right: 60px;
+  letter-spacing: -1px;
+  line-height: 12.77rem;
+  margin-bottom: 129px;
 }
 
-.column1 {
-  float: left;
-  width: 29%;
-}
-
-.column2 {
-  width: 15%;
-  padding-left: 0px;
-}
-
-.column3 {
-  width: 20%;
-}
-
-.column4 {
-  width: 15%;
-}
-
-.column5 {
-  width: 10%;
-}
-
+.column1,
 .column2,
 .column3,
 .column4,
@@ -152,18 +132,42 @@ body {
   float: left;
 }
 
+.column1 {
+  width: 33%;
+}
+
+.column2 {
+  padding-left: 14px;
+  width: 17%;
+}
+
+.column3 {
+  padding-left: 17px;
+  width: 25%;
+}
+
+.column4 {
+  padding-left: 17px;
+  width: 15%;
+}
+
+.column5 {
+  padding-left: 17px;
+  width: 5%;
+}
+
 .title {
   font-size: 9px;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 40px;
   text-transform: uppercase;
 }
 
 .text {
-  letter-spacing: 0.01em;
+  font-size: 11.5px;
+  line-height: 14px;
   margin-top: 14px;
   text-transform: uppercase;
-  line-height: 15px;
 }
 
 .row:after {
