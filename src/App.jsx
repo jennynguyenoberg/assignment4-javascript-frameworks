@@ -10,23 +10,28 @@ function App() {
   useEffect(() => {
     fetch('https://hp-api.onrender.com/api/characters/')
       .then((response) => {
-        return response.json();
+        if (!response.ok) {
+          throw new Error(response.status)
+        } else {
+          return response.json()
+        }
       })
       .then((data) => {
         // console.log(data)
         setCharacters(data);
         setIsLoading(false);
       })
+      .catch((error) => console.error(error));
   }, [])
 
   return (
     <div className="App">
       {
         isLoading ?
-        <ThreeDots /> :
-        characters.map((article) => {
-          return <ArticleComponent key={article.id} {...article}></ArticleComponent>
-        })
+          <ThreeDots /> :
+          characters.map((article) => {
+            return <ArticleComponent key={article.id} {...article}></ArticleComponent>
+          })
       }
     </div>
   );
