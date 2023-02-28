@@ -1,6 +1,6 @@
 import flash from './assets/hp-flash.svg';
 
-export default ({ image, name, house, actor, dateOfBirth, gender }) => {
+export default ({ image, name, house, actor, species, gender }) => {
 
   return <div className="main-container">
     <div className="left-container">
@@ -34,8 +34,8 @@ export default ({ image, name, house, actor, dateOfBirth, gender }) => {
           <p className="text">{actor}</p>
         </div>
         <div className="column4">
-          <p className="title">Date Of Birth</p>
-          <p className="text">{dateOfBirth}</p>
+          <p className="title">Species</p>
+          <p className="text">{species}</p>
         </div>
         <div className="column5">
           <p className="title">gender</p>
