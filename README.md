@@ -16,15 +16,13 @@
 
 ---
 
-### Styling / Design
-**Idea:** My idea for this project was to create a simple pomodoro timer, using React with hooks such as ```useState``` and ```useEffect```. <br>
-**API-source:** https://hp-api.onrender.com//<br>
-**Design:** I didn't aim for a pixel perfect design this time around since it got a bit complicated and didn't really fit the purpose, but I used the style as general inspiration by using a left aligned grid, a sans serif and the same primary colors.
-
 **Visit live site here:** [Harry Potter API](https://assignment4-javascript-frameworks.vercel.app/)
 
 ---
 
-### Design inspiration
+### Sources
+**API:** https://hp-api.onrender.com/<br>
+
+**Design:** 
 ![Image of website mockup](https://user-images.githubusercontent.com/116844306/221381104-d340e619-45a7-4ca5-b93a-2b134d885451.png)<br>
 **Source:** https://dribbble.com/shots/11400388-Isolation-Reflection
