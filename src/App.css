@@ -39,11 +39,12 @@ body {
 .left-container {
   background-color: var(--dark-pink);
   width: 53.2%;
+  height: 955px;
 }
 
 .asset_img img {
   filter: grayscale(100%);
-  height: 100%;
+  height: 955px;
   max-width: 100%;
   width: 100%;
 }
